@@ -1,0 +1,18 @@
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0; }
+  footer .signature {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    footer .signature p {
+      margin: 0; }
+    footer .signature .social {
+      margin: 10px auto; }
+
+.social-icons {
+  height: 35px;
+  width: 35px; }
