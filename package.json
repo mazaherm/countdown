@@ -1,0 +1,23 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "Countdown timer in Vanilla JS",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch src/styles/scss -o src/styles/css",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazaherm/countdown.git"
+  },
+  "author": "Mazaher Muraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mazaherm/countdown/issues"
+  },
+  "homepage": "https://github.com/mazaherm/countdown#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
