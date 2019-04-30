@@ -1,5 +1,12 @@
 // Timer end date
-let endDate = new Date('Jun 5, 2019 00:00:00').getTime()
+let endDate = new Date('Thu May 23 2019 01:00:00 GMT+0100 (British Summer Time)')
+
+let dateSelected = document.getElementById('date')
+
+dateSelected.addEventListener('change', () => {
+  let date = new Date(dateSelected.value)
+  endDate = new Date(date)
+})
 
 // Timer
 let timer = setInterval(() => {
