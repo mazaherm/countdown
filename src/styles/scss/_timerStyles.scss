@@ -1,23 +1,29 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#container {
+.container {
   background-color: #222222;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  #timer {
-    color: #FFFFFF;
-    font-size: 64px;
-
-    #label {
-      font-size: 40px;
-      padding-left: 4px;
-    }
+  h1 {
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
   }
+}
+
+#timer {
+  color: #FFFFFF;
+  font-size: 64px;
+}
+        
+#label {
+  font-size: 40px;
+  padding-left: 4px;
 }
