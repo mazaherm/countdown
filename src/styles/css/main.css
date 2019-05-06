@@ -27,10 +27,7 @@ body {
 .container {
   background-color: #222222;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  height: 100vh; }
   .container h1 {
     text-transform: uppercase;
     margin: 0 auto;
@@ -38,7 +35,19 @@ body {
 
 #timer {
   color: #FFFFFF;
-  font-size: 64px; }
+  font-size: 64px;
+  display: flex;
+  flex-flow: column wrap; }
+  #timer p {
+    text-align: center; }
+  #timer h1 {
+    font-size: 48px;
+    text-decoration: underline; }
+  #timer h6 {
+    margin: 0 auto 18px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter; }
 
 #label {
   font-size: 40px;
