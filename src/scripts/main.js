@@ -1,15 +1,13 @@
-// Timer end date
-let endDate = new Date('Thu May 23 2019 01:00:00 GMT+0100 (British Summer Time)')
-
 let dateSelected = document.getElementById('date')
-
-dateSelected.addEventListener('change', () => {
-  let date = new Date(dateSelected.value)
-  endDate = new Date(date)
-})
 
 // Timer
 let timer = setInterval(() => {
+
+  dateSelected.addEventListener('change', () => {
+    let date = new Date(dateSelected.value)
+    endDate = new Date(date)
+  })
+
   let currentTime = new Date().getTime();
   let t = endDate - currentTime
 
@@ -26,13 +24,13 @@ let timer = setInterval(() => {
   } else {
     document.getElementById('timer').innerHTML = 'The countdown is over!'
   }
-  // change color based on remaining time
-  if (days <= 5) {
-    document.getElementById('timer').style.color = 'red'
-  } else if (days <=10) {
-    document.getElementById('timer').style.color = 'orange'
-  } else {
-    document.getElementById('timer').style.color = 'green'
-  }
+  // // change color based on remaining time
+  // if (days <= 5) {
+  //   document.getElementById('timer').style.color = 'red'
+  // } else if (days <=10) {
+  //   document.getElementById('timer').style.color = 'orange'
+  // } else {
+  //   document.getElementById('timer').style.color = 'green'
+  // }
 
 }, 1000)
