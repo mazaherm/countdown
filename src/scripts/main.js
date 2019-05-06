@@ -24,13 +24,4 @@ let timer = setInterval(() => {
   } else {
     document.getElementById('timer').innerHTML = 'The countdown is over!'
   }
-  // // change color based on remaining time
-  // if (days <= 5) {
-  //   document.getElementById('timer').style.color = 'red'
-  // } else if (days <=10) {
-  //   document.getElementById('timer').style.color = 'orange'
-  // } else {
-  //   document.getElementById('timer').style.color = 'green'
-  // }
-
 }, 1000)
